@@ -1,0 +1,286 @@
+@import url(header_style.css);
+@import url(footer_style.css);
+@import url(nav_style.css);
+@import url(article_style.css);
+
+body {
+  background-color: #d8d8d8;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*style about  section*/
+.containt_text_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*Auther detail style*/
+.author_name {
+  margin-left: 20px;
+}
+
+.responsive a {
+  color: inherit;
+  text-decoration: none
+}
+
+.follow_button {
+  width: 80px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: rgb(168, 3, 3);
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+.auther_details {
+  width: auto;
+  height: auto;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 50px;
+  box-shadow: 1px 5px 20px #d4d4d4;
+}
+
+.auther_detail_one {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.auther_detail_two {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#company_name {
+  margin-left: 20px;
+}
+
+.side_div {
+  margin: 10px;
+
+}
+
+/* Blog Gallary image design*/
+#blog_img_main {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+div.gallery {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  box-shadow: 1px 5px 20px 10px #d4d4d4;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  margin-left: 5px;
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.cap {
+  text-align: center;
+  padding: 5px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* font family for p h1 h3 */
+P {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
+div {
+  font-family: sans-serif;
+}
+
+i {
+  font-family: sans-serif;
+}
+
+figcaption {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Screen size for blog article section */
+
+@media (min-width: 0px) and (max-width:345px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 50px) and (max-width:900px) {
+  .art_sec {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .a_side_content {
+    width: auto;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 1px 5px 20px #d4d4d4;
+  }
+
+  .about_grid_section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 50px) and (max-width:600px) {
+  .section_main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+@media (min-width: 600px) and (max-width:900px) {
+  .section_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (min-width:901px) {
+  .art_sec {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .a_side_content {
+    width: 200px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 1px 5px 20px #d4d4d4;
+  }
+
+  .about_grid_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section_main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*remove border */
+.fb {
+  border: none;
+}
+
+.twtr {
+  border: none;
+}
+
+.lkdn {
+  border: none;
+}
+
+.icon ion-icon {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.icon ion-icon:hover {
+ margin-top: 50px;
+}
+
+.btn {
+  width: 250px;
+  height: 55px;
+  background-color: transparent;
+  border: 2px solid #1f0141;
+  font-size: 18px;
+  color: #1f0141;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #1f0141;
+  color: #fff;
+  margin: 15px;
+}
+
+/*style search bar hare*/
+.search-container {
+  display: flex;
+  justify-content: end;
+  margin: 15px;
+}
+
+/* Section style */
+section::after {
+  content: "";
+  display: grid;
+  clear: both;
+  align-items: center;
+  background-color: #ffffff;
+}
